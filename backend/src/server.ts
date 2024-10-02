@@ -1,7 +1,7 @@
 import app from "./app"
-// import config from "./config"
+import config from "./config"
 
-const port = 3000
+const port = config.port || 3000
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   })
