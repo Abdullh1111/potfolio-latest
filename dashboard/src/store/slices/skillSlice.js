@@ -106,7 +106,7 @@ export const addNewSkill = (data) => async (dispatch) => {
   dispatch(skillSlice.actions.addNewSkillRequest());
   try {
     const response = await axios.post(
-      "${url}/skill/add",
+      `${url}/skill/add`,
       data,
       {
         withCredentials: true,

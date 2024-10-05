@@ -109,7 +109,7 @@ export const addNewProject = (data) => async (dispatch) => {
   dispatch(projectSlice.actions.addNewProjectRequest());
   try {
     const response = await axios.post(
-      "${url}/project/add",
+      `${url}/project/add`,
       data,
       {
         withCredentials: true,
